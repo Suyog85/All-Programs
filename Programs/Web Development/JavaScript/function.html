@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+
+  <script>
+    let age = 21;
+    function printAge(){
+      console.log(`Your age is ${age}`)
+    }
+    printAge();
+    age=25;
+    printAge();
+    age=30;
+    printAge();
+
+    //Driving eligibility
+    console.log('');
+    console.log('Driving eligibility');
+    function determineDriveCar(){
+      let age;
+      if(age===undefined){
+        return 'Your are not Human!!'
+      }
+      if(age>=18){
+        return 'you can drive car';
+      }
+      else{
+        return 'Use a bycicle';
+      }
+    }
+    console.log(determineDriveCar());
+
+    //Summation
+    console.log('');
+    console.log('Summation');
+    function sum(a,b){
+      let s = a+b;
+      return s;
+    }
+
+    let add=sum(4,5);
+    console.log(add);
+
+    console.log(sum(10,20));
+    console.log(sum(40,23));
+    console.log(sum(38.54,82.4));
+
+    //Default Parameter
+    console.log('');
+    console.log('Greeting');
+    function greeting(name = 'pyare'){
+      console.log(`Namaste ${name} Uncle`);
+    }
+    greeting();
+    greeting('Titu');
+  </script>
+</body>
+</html>
