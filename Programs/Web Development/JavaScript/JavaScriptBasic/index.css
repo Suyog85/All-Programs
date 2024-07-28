@@ -1,0 +1,11 @@
+.Btn1{
+  background-color: rgb(76, 148, 76);
+  border-radius: 5px;
+  border: 0cap;
+}
+#Btn2{
+  background-color: rgb(245, 249, 246);
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
