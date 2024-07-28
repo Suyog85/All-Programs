@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside Object</title>
+</head>
+<body>
+  <script>
+    let product = {
+      company:'Mango',
+      item_name:'T-shirt',
+      price:299,
+
+      rating:{
+        star:4.5,
+        noOfReviews:283,
+      },
+      displayPrice: function(){
+        console.log(` price of the product is ₹${this.price}`);
+      }
+    };
+    console.log(product);
+    product.displayPrice();
+
+
+    //AutoBoxing
+    console.log('Hello Everyone'.length);
+    console.log('Hello Everyone'.toUpperCase());
+  </script>
+</body>
+</html>
